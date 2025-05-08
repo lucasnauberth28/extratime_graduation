@@ -1,0 +1,87 @@
+:root{
+    --background: #010101;
+
+    --bg-menu: rgba(24, 24, 24, .4);
+    --txt-green: #4ACB5B;
+    --txt-light-green: #7DD957;
+}
+
+/* [data-theme="light"] {
+    --background: #
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    z-index: 100;
+    position: relative;
+}
+
+.body{
+    background: var(--background);
+}
+
+.container{
+    margin: 0 5rem;
+    z-index: 10;
+    width: 100%;
+}
+
+.header{
+    height: 65px;
+    border-radius: 50px;
+    display: flex;
+}
+
+.bg-menu{
+    background: var(--bg-menu);
+    cursor: pointer;
+}
+
+.list-menu{
+    height: 100%;
+    max-height: 730px;
+    min-height: 730px;
+    border-radius: 20px;
+}
+
+.title{
+    font-size: 52px;
+}
+
+.subtitle{
+    font-size: 24px;
+}
+
+.txt-green{
+    color: var(--txt-green);
+}
+
+.txt-light-green{
+    color: var(--txt-light-green);
+}
+
+.bg-green{
+    background: var(--txt-green);
+}
+
+.bg-light-green{
+    background: var(--txt-light-green);
+}
+
+.background_blur {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+    background-image: url('../image/bigblob.svg'), url('../image/littleblob.svg');
+    background-position: top right, bottom right;
+    z-index: 1;                  
+}
+
