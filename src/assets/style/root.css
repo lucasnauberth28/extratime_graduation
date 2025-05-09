@@ -1,0 +1,20 @@
+:root{
+    --background: #010101;
+    --bg-menu: rgba(24, 24, 24, .4);
+    --bg-solid: rgba(24, 24, 24, .6);;
+    --txt-green: #4ACB5B;
+    --txt-light-green: #7DD957;
+
+    --input-bg: #0D0D0D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    z-index: 100;
+    position: relative;
+    overflow-y: auto;
+}

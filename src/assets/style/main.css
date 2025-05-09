@@ -1,24 +1,5 @@
-:root{
-    --background: #010101;
-
-    --bg-menu: rgba(24, 24, 24, .4);
-    --txt-green: #4ACB5B;
-    --txt-light-green: #7DD957;
-}
-
-/* [data-theme="light"] {
-    --background: #
-} */
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-main {
-    z-index: 100;
-    position: relative;
-}
+@import url('root.css');
+@import url('fonts.css');
 
 .body{
     background: var(--background);
@@ -51,7 +32,7 @@ main {
     border-radius: 20px;
 }
 
-.list-menu > li > a:hover{
+.list-menu > li > a:hover, .back_icon{
     transition: all .35s;
     color: rgba(255,255,255,.8) !important;
 }
@@ -89,9 +70,19 @@ main {
     border: 1px solid #333333;
 }
 
+.input{
+    background: var(--input-bg);
+    border: 1px solid #333333;
+    border-radius: 12px;
+}
+
+.input:focus{
+    outline: none;
+    border: 1px solid #464646;
+}
+
 .background_blur {
     position: fixed;
-    right: 0;
     bottom: 0;
     width: 100%;
     height: 100%;
@@ -100,5 +91,9 @@ main {
     background-image: url('../image/bigblob.svg'), url('../image/littleblob.svg');
     background-position: top right, bottom right;
     z-index: 1;                  
+}
+
+.background_blur.revert{
+    transform: scaleX(-1);
 }
 
