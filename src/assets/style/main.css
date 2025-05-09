@@ -38,6 +38,9 @@ main {
 
 .bg-menu{
     background: var(--bg-menu);
+}
+
+.cursor-pointer{
     cursor: pointer;
 }
 
@@ -48,12 +51,18 @@ main {
     border-radius: 20px;
 }
 
+.list-menu > li > a:hover{
+    transition: all .35s;
+    color: rgba(255,255,255,.8) !important;
+}
+
 .title{
     font-size: 52px;
 }
 
 .subtitle{
     font-size: 24px;
+    color: rgba(255,255,255,.8);
 }
 
 .txt-green{
@@ -70,6 +79,14 @@ main {
 
 .bg-light-green{
     background: var(--txt-light-green);
+}
+
+.btn-success:hover{
+    background: var(--txt-light-green);
+}
+
+.btn-dark{
+    border: 1px solid #333333;
 }
 
 .background_blur {

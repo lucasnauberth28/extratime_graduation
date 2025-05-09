@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'allround';
+  src: url('../fonts/Fontspring-DEMO-allroundgothic-book.otf') format('woff2');
+}
+
+body{
+    font-family: 'allround', sans-serif;
+}
